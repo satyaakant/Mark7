@@ -16,7 +16,7 @@ function errorhandler(error){
 function clickresponse(){
 var answer = inputxt.value;
 fetch(geturl(answer))
-.then (response => response.json)
+.then (response => response.json())
 .then(json=> {
     outputxt.innerText= json.contents.translated;
 
